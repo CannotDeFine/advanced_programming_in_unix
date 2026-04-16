@@ -1,0 +1,3 @@
+[
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/ls.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/ls.cc apue.3e/lib/error.c -o chapter01/ls"}
+]
