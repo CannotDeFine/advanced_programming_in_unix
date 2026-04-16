@@ -4,6 +4,8 @@
 #define BUFFER_SIZE 4096
 
 // 通过read/write系统调用实现复制
+// BUFFER_SIZE等于或者大于磁盘块长度的性能是比较好的
+// 能减少系统调用的次数
 
 int main(void) {
     int n = 0;

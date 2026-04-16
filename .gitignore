@@ -3,6 +3,7 @@ bin/
 
 .codex
 .clangd
+file.hole
 
 compile_command.json
 unix_function_notes.md
