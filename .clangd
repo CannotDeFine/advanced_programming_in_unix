@@ -1,7 +1,0 @@
-CompileFlags:
-  Add:
-    - -Iapue.3e/include
-    - -Wall
-    - -Wextra
-    - -g
-    - -std=c++17
