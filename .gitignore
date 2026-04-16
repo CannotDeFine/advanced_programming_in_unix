@@ -1,9 +1,10 @@
-bin/
 .cache/
+
+bin/
 
 .codex
 .clangd
-file.hole
 
+file.hole
 compile_command.json
 unix_function_notes.md
