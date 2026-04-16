@@ -5,3 +5,4 @@ bin/
 .clangd
 
 compile_command.json
+unix_function_notes.md
