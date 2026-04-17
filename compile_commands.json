@@ -1,3 +1,12 @@
 [
-  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/ls.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/ls.cc apue.3e/lib/error.c -o chapter01/ls"}
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/01_ls.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/01_ls.cc apue.3e/lib/error.c -o chapter01/01_ls"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/02_stdin_to_stdout.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/02_stdin_to_stdout.cc apue.3e/lib/error.c -o chapter01/02_stdin_to_stdout"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/03_stdin_to_stdout.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/03_stdin_to_stdout.cc apue.3e/lib/error.c -o chapter01/03_stdin_to_stdout"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/04_getpid.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/04_getpid.cc apue.3e/lib/error.c -o chapter01/04_getpid"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/05_get_command_and_exec.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/05_get_command_and_exec.cc apue.3e/lib/error.c -o chapter01/05_get_command_and_exec"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/06_get_error.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/06_get_error.cc apue.3e/lib/error.c -o chapter01/06_get_error"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/07_uid_and_gid.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/07_uid_and_gid.cc apue.3e/lib/error.c -o chapter01/07_uid_and_gid"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter01/08_signal.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter01/08_signal.cc apue.3e/lib/error.c -o chapter01/08_signal"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter03/01_lseek.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter03/01_lseek.cc apue.3e/lib/error.c -o chapter03/01_lseek"},
+  {"directory":"/home/cdf/advanced_programming_in_unix","file":"chapter03/02_file_hole.cc","command":"g++ -Iapue.3e/include -Wall -Wextra -g -std=c++17 chapter03/02_file_hole.cc apue.3e/lib/error.c -o chapter03/02_file_hole"}
 ]
