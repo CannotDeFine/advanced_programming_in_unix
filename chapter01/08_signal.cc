@@ -37,6 +37,7 @@ int main(void) {
 }
 
 void sig_int(int signo) {
+    (void)signo;
     const char msg[] = "\ninterrupt\n% ";
     write(STDOUT_FILENO, msg, sizeof(msg) - 1);
 }
