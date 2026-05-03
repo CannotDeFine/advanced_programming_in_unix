@@ -5,7 +5,9 @@ bin/
 .codex
 .clangd
 
+bar
 compile_commands.json
 file.hole
+foo
 temp.foo
 unix_function_notes.md
