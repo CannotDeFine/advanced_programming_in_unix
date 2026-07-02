@@ -1,6 +1,8 @@
 .cache/
 
 bin/
+build/
+dirent/
 
 .codex
 .clangd

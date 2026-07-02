@@ -46,6 +46,10 @@ typedef	void	Sigfunc(int);	/* for signal handlers */
 /*
  * Prototypes for our own functions.
  */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 char	*path_alloc(size_t *);				/* {Prog pathalloc} */
 long	 open_max(void);					/* {Prog openmax} */
 
@@ -129,5 +133,9 @@ void	TELL_PARENT(pid_t);
 void	TELL_CHILD(pid_t);
 void	WAIT_PARENT(void);
 void	WAIT_CHILD(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif	/* _APUE_H */
