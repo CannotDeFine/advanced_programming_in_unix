@@ -1,8 +1,8 @@
 #include "apue.h"
 #include <cstdio>
 #include <cstring>
-#include <unistd.h>
 #include <sys/wait.h>
+#include <unistd.h>
 
 // get command from stdin and execute
 
@@ -12,13 +12,14 @@ int main(void) {
     int status;
 
     printf("%% ");
-    while((fgets(buffer, MAXLINE, stdin)) != NULL) {
-        if (buffer[strlen(buffer) - 1] == '\n') buffer[strlen(buffer) - 1] = 0;
+    while ((fgets(buffer, MAXLINE, stdin)) != NULL) {
+        if (buffer[strlen(buffer) - 1] == '\n')
+            buffer[strlen(buffer) - 1] = 0;
 
         if ((pid = fork()) < 0) {
             err_sys("fork error.");
         } else if (pid == 0) { /* child */
-            execlp(buffer, buffer, (char*)0);
+            execlp(buffer, buffer, (char *)0);
             err_ret("could not exec %s.", buffer);
             exit(127);
         }
@@ -30,8 +31,6 @@ int main(void) {
 
         printf("%% ");
     }
-
-    
 
     exit(0);
 }

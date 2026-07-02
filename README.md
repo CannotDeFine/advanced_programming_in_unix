@@ -40,6 +40,12 @@ Generate `compile_commands.json` for clangd:
 make clangd
 ```
 
+Format chapter source files:
+
+```sh
+make format
+```
+
 Clean generated files:
 
 ```sh

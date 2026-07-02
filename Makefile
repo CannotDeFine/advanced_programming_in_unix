@@ -34,7 +34,7 @@ TARGETS := $(C_TARGETS) $(CXX_TARGETS)
 
 COMPILE_COMMANDS := compile_commands.json
 
-.PHONY: all clean list clangd
+.PHONY: all clean list clangd format
 
 all: $(TARGETS)
 
@@ -42,6 +42,9 @@ list:
 	@printf '%s\n' $(TARGETS)
 
 clangd: $(COMPILE_COMMANDS)
+
+format:
+	clang-format -i $(C_SRCS) $(CXX_SRCS)
 
 $(APUE_BUILD_DIR)/%.o: $(APUE_LIB_DIR)/%.c $(APUE_HEADER)
 	@mkdir -p $(dir $@)

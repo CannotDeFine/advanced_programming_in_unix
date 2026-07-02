@@ -10,12 +10,14 @@
 int main(void) {
     int n = 0;
     char *buffer;
-    buffer = (char*)malloc(BUFFER_SIZE * sizeof(char));
+    buffer = (char *)malloc(BUFFER_SIZE * sizeof(char));
 
-    while((n = read(STDIN_FILENO, buffer, BUFFER_SIZE)) != 0) {
-        if (write(STDOUT_FILENO, buffer, n) != n) err_sys("Write Error!");
+    while ((n = read(STDIN_FILENO, buffer, BUFFER_SIZE)) != 0) {
+        if (write(STDOUT_FILENO, buffer, n) != n)
+            err_sys("Write Error!");
     }
 
-    if (n < 0) err_sys("Read Error!");
+    if (n < 0)
+        err_sys("Read Error!");
     exit(0);
 }

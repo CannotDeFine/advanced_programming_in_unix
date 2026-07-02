@@ -19,7 +19,7 @@ int main(void) {
     if ((write(fd, buf1, 10)) != 10) {
         err_sys("wtire error.");
     }
-    
+
     /* offset = 10 */
 
     if ((lseek(fd, 16384, SEEK_SET)) == -1) {

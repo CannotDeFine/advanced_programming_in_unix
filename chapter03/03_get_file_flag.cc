@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     }
 
     switch (val & O_ACCMODE) {
-    case O_RDONLY :
+    case O_RDONLY:
         printf("read only");
         break;
     case O_WRONLY:
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     }
 
 // 如果系统定义了O_FSYNC，并且它和O_SYNC的实现不同，就单独处理
-#if !defined(_POSIX_C_SOURCE) && defined (O_FSYNC) && (O_FSYNC != O_SYNC)
+#if !defined(_POSIX_C_SOURCE) && defined(O_FSYNC) && (O_FSYNC != O_SYNC)
     if (val & O_FSYNC) {
         printf(", synchronous writes");
     }
@@ -46,5 +46,4 @@ int main(int argc, char *argv[]) {
 
     putchar('\n');
     exit(0);
-
 }

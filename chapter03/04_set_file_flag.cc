@@ -33,15 +33,14 @@ void clr_fl(int fd, int flags) /* flags are file status flags to turn on */
     }
 }
 
-int main(void)
-{
+int main(void) {
     int fd = open("./in.file", O_RDWR);
     if (fd < 0) {
         err_sys("open error");
     }
 
     printf("the flag value of the file: %d", fcntl(fd, F_GETFL, 0));
-    
+
     set_fl(fd, O_APPEND);
 
     printf("the flag value of the file: %d", fcntl(fd, F_GETFL, 0));
@@ -49,7 +48,7 @@ int main(void)
     clr_fl(fd, O_APPEND);
 
     printf("the flag value of the file: %d", fcntl(fd, F_GETFL, 0));
-    
+
     if (close(fd) < 0) {
         err_sys("close error");
     }
