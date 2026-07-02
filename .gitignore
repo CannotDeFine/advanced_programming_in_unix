@@ -3,6 +3,8 @@
 bin/
 build/
 dirent/
+apue.3e/lib/*.o
+apue.3e/lib/libapue.a
 
 .codex
 .clangd
